@@ -27,18 +27,18 @@ Projekts tiek realizēts divatā, izmantojot GitHub versiju kontroles sistēmu, 
 
 ---
 
-## ✅ Darāmo darbu saraksts (To-do list)
+## Darāmo darbu saraksts (To-do list)
 
-### 👤 1. Komandas dalībnieks: A
+### 1. Komandas dalībnieks: Edgars
 
-- [ ] Izveidot sākotnējo GitHub repozitoriju un README struktūru
+- [+] Izveidot sākotnējo GitHub repozitoriju un README struktūru
 - [ ] Implementēt web scraping funkcionalitāti (ar `requests` un `BeautifulSoup`)
 - [ ] Izveidot produktu klasi ar vajadzīgajiem atribūtiem (nosaukums, cena, saite utt.)
 - [ ] Realizēt datu saglabāšanu JSON/CSV failā
 - [ ] Veikt pamata testus scraping daļai
 - [ ] Dokumentēt scraping kodu un funkcionalitāti
 
-### 👤 2. Komandas dalībnieks: B
+### 2. Komandas dalībnieks: Jonass
 
 - [ ] Izveidot datu struktūru preču uzglabāšanai (piem., saraksts ar objektiem vai vārdnīca)
 - [ ] Implementēt vismaz vienu paša realizētu kārtošanas algoritmu (piem., QuickSort)
@@ -47,7 +47,7 @@ Projekts tiek realizēts divatā, izmantojot GitHub versiju kontroles sistēmu, 
 - [ ] Izveidot vienkāršu CLI izvēlni lietotājam
 - [ ] Palīdzēt ar projekta gala dokumentāciju
 
-### 🧩 Kopīgi
+###  Kopīgi
 
 - [ ] Nodrošināt GitHub commit vēsturi un versiju kontroli
 - [ ] Sagatavot gala prezentācijas video (piem., ar `OBS` vai `ScreenRec`)
