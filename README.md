@@ -32,10 +32,10 @@ Projekts tiek realizēts divatā, izmantojot GitHub versiju kontroles sistēmu, 
 ### 1. Komandas dalībnieks: Edgars
 
 - [+] Izveidot sākotnējo GitHub repozitoriju un README struktūru
-- [ ] Implementēt web scraping funkcionalitāti (ar `requests` un `BeautifulSoup`)
-- [ ] Izveidot produktu klasi ar vajadzīgajiem atribūtiem (nosaukums, cena, saite utt.)
-- [ ] Realizēt datu saglabāšanu JSON/CSV failā
-- [ ] Veikt pamata testus scraping daļai
+- [+] Implementēt web scraping funkcionalitāti (ar `requests` un `BeautifulSoup`)
+- [+] Izveidot produktu klasi ar vajadzīgajiem atribūtiem (nosaukums, cena, saite utt.)
+- [+] Realizēt datu saglabāšanu JSON/CSV failā
+- [+] Veikt pamata testus scraping daļai
 - [ ] Dokumentēt scraping kodu un funkcionalitāti
 
 ### 2. Komandas dalībnieks: Jonass
