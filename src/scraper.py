@@ -21,8 +21,8 @@ def iegut_divanus():
             nosaukums = nosaukums_bloks.get_text(strip=True)
 
             # Apraksts (ja ir)
-            apraksts_bloks = bloks.find("h4", class_="itemFacts")
-            apraksts = apraksts_bloks.get_text(strip=True) if apraksts_bloks else ""
+            # apraksts_bloks = bloks.find("h4", class_="itemFacts")
+            # apraksts = apraksts_bloks.get_text(strip=True) if apraksts_bloks else ""
 
             # Cena
             cenas_bloks = bloks.find(class_="itemPriceBox").find("p").find("span")
@@ -36,7 +36,7 @@ def iegut_divanus():
                 cena = f"{vesela.get_text(strip=True)}.{komata.get_text(strip=True)}" if vesela and komata else "0.00"
 
             # Pilns nosaukums
-            pilns_nosaukums = nosaukums if not apraksts else f"{nosaukums} – {apraksts}"
+            pilns_nosaukums = nosaukums #if not apraksts else f"{nosaukums} – {apraksts}"
 
             # Saite uz preci
             link_tags = bloks.find_all("a", href=True)
