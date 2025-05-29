@@ -2,8 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from product import Product
 
-def iegut_divanus():
-    adrese = "https://www.ikea.lv/lv/products/dzivojama-istaba/divani"
+def iegut_preces_no_adreses(adrese):
     preces = []
 
     atbilde = requests.get(adrese)
@@ -20,10 +19,6 @@ def iegut_divanus():
             nosaukums_bloks = kermenis.find("h3")
             nosaukums = nosaukums_bloks.get_text(strip=True)
 
-            # Apraksts (ja ir)
-            # apraksts_bloks = bloks.find("h4", class_="itemFacts")
-            # apraksts = apraksts_bloks.get_text(strip=True) if apraksts_bloks else ""
-
             # Cena
             cenas_bloks = bloks.find(class_="itemPriceBox").find("p").find("span")
             if "data-price" in cenas_bloks.attrs:
@@ -36,7 +31,7 @@ def iegut_divanus():
                 cena = f"{vesela.get_text(strip=True)}.{komata.get_text(strip=True)}" if vesela and komata else "0.00"
 
             # Pilns nosaukums
-            pilns_nosaukums = nosaukums #if not apraksts else f"{nosaukums} – {apraksts}"
+            pilns_nosaukums = nosaukums
 
             # Saite uz preci
             link_tags = bloks.find_all("a", href=True)
