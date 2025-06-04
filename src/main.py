@@ -1,3 +1,9 @@
+import json
+import csv
+from typing import List, Dict, Union
+import os
+from product import Product
+from sorter import quick_sort
 from scraper import iegut_preces_no_adreses
 import csv
 
