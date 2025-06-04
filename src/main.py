@@ -1,9 +1,3 @@
-import json
-import csv
-from typing import List, Dict, Union
-import os
-from product import Product
-from sorter import quick_sort
 from scraper import iegut_preces_no_adreses
 import csv
 
@@ -21,9 +15,9 @@ def izvadit_preces(preces):
         print(f"Saite: {prece.saite}")
         print("-" * 40)
 
-def izveidot_faila_nosaukumu(no_adreses):
-    daļa = no_adreses.rstrip('/').split('/')[-1]
-    return f"data/{daļa}.csv" if daļa else "data/preces.csv"
+def izveidot_faila_nosaukumu(adrese):
+    dala = adrese.rstrip('/').split('/')[-1]
+    return f"data/{dala}.csv" if dala else "data/preces.csv"
 
 if __name__ == "__main__":
     adrese = input("Ievadi IKEA adresi: ").strip()
@@ -31,6 +25,6 @@ if __name__ == "__main__":
     if preces:
         izvadit_preces(preces)
         saglabat_csv(preces)
-        print("Saglabāts: data/preces.csv")
+        print(f"Saglabāts: data/preces.csv")
     else:
         print("Netika atrastas nevienas preces.")
